@@ -55,7 +55,7 @@ llm_calibration/
 ### 1. Clone or download the project
 
 ```bash
-git clone "https://github.com/maitreyi03/LLMEval"
+git clone "https://github.com/maitreyi03/llm_calibration"
 cd llm_calibration
 ```
 
@@ -83,11 +83,13 @@ pip install -r requirements.txt
 ### 5. Add your API key
 
 **Option A — Edit config.py** (simplest):
+
 ```python
 GROQ_API_KEY = "gsk_your_key_here"
 ```
 
 **Option B — Environment variable** (recommended for shared code):
+
 ```bash
 export GROQ_API_KEY="gsk_your_key_here"    # macOS / Linux
 set GROQ_API_KEY=gsk_your_key_here         # Windows
@@ -108,6 +110,7 @@ python 01_extract_datasets.py
 ```
 
 Expected output:
+
 ```
 Extracting GSM8K...       Saved 100 rows → data/gsm8k_first_100.csv
 Extracting MMLU...        Saved 100 rows → data/mmlu_first_100.csv
@@ -123,11 +126,13 @@ Extracting TruthfulQA...  Saved 100 rows → data/truthfulqa_first_100.csv
 Queries the Groq API for all 500 questions. Results are checkpointed after each domain, so you can safely interrupt and resume.
 
 **Run all domains (~20 minutes total):**
+
 ```bash
 python 02_run_inference.py
 ```
 
 **Run a single domain only:**
+
 ```bash
 python 02_run_inference.py --domain MMLU
 python 02_run_inference.py --domain TruthfulQA
@@ -151,6 +156,7 @@ python 03_score_answers.py
 ```
 
 Expected output:
+
 ```
 Scoring summary:
   GSM8K          Correct:  96/100  (96.0%)  |  Wrong:   4  Unknown: 0
@@ -176,19 +182,19 @@ python 04_analyse_results.py
 
 ## Output Files
 
-| File | Description |
-|------|-------------|
-| `data/*.csv` | Raw dataset CSVs (100 questions each) |
-| `results/checkpoint_results.csv` | Inference results saved after each domain |
-| `results/verbalized_confidence_raw_results.csv` | Final merged raw inference output |
-| `results/verbalized_confidence_scored.csv` | Scored results with `LLM_right` column |
-| `results/confidence_summary_by_domain.csv` | Per-domain accuracy and calibration metrics |
-| `results/plots/domain_accuracy.png` | Accuracy bar chart + confidence scatter plot |
-| `results/plots/overconfidence.png` | Confidence distribution (correct vs wrong) + overconfidence rate |
-| `results/plots/reliability_diagrams.png` | Calibration curves per domain |
-| `results/plots/ece_by_domain.png` | Expected Calibration Error bar chart |
-| `results/plots/conf_bins_accuracy.png` | Accuracy per confidence bin (overall) |
-| `results/plots/heatmap_domain_conf.png` | Accuracy heatmap: domain × confidence bin |
+| File                                            | Description                                                      |
+| ----------------------------------------------- | ---------------------------------------------------------------- |
+| `data/*.csv`                                    | Raw dataset CSVs (100 questions each)                            |
+| `results/checkpoint_results.csv`                | Inference results saved after each domain                        |
+| `results/verbalized_confidence_raw_results.csv` | Final merged raw inference output                                |
+| `results/verbalized_confidence_scored.csv`      | Scored results with `LLM_right` column                           |
+| `results/confidence_summary_by_domain.csv`      | Per-domain accuracy and calibration metrics                      |
+| `results/plots/domain_accuracy.png`             | Accuracy bar chart + confidence scatter plot                     |
+| `results/plots/overconfidence.png`              | Confidence distribution (correct vs wrong) + overconfidence rate |
+| `results/plots/reliability_diagrams.png`        | Calibration curves per domain                                    |
+| `results/plots/ece_by_domain.png`               | Expected Calibration Error bar chart                             |
+| `results/plots/conf_bins_accuracy.png`          | Accuracy per confidence bin (overall)                            |
+| `results/plots/heatmap_domain_conf.png`         | Accuracy heatmap: domain × confidence bin                        |
 
 ---
 
@@ -196,27 +202,27 @@ python 04_analyse_results.py
 
 All settings are in `config.py`. Common things to change:
 
-| Setting | Default | Description |
-|---------|---------|-------------|
-| `GROQ_API_KEY` | `"YOUR_GROQ_API_KEY_HERE"` | Your Groq API key |
-| `MODEL` | `"llama-3.3-70b-versatile"` | Groq model to use |
-| `SLEEP_BETWEEN_CALLS` | `2.0` | Seconds between API calls (free tier: 30 req/min) |
-| `HIGH_CONF_THRESHOLD` | `0.80` | Threshold for "high confidence" in overconfidence analysis |
-| `N_CALIBRATION_BINS` | `10` | Number of bins for ECE computation |
+| Setting               | Default                     | Description                                                |
+| --------------------- | --------------------------- | ---------------------------------------------------------- |
+| `GROQ_API_KEY`        | `"YOUR_GROQ_API_KEY_HERE"`  | Your Groq API key                                          |
+| `MODEL`               | `"llama-3.3-70b-versatile"` | Groq model to use                                          |
+| `SLEEP_BETWEEN_CALLS` | `2.0`                       | Seconds between API calls (free tier: 30 req/min)          |
+| `HIGH_CONF_THRESHOLD` | `0.80`                      | Threshold for "high confidence" in overconfidence analysis |
+| `N_CALIBRATION_BINS`  | `10`                        | Number of bins for ECE computation                         |
 
 ---
 
 ## Key Results
 
-| Domain | Accuracy | Cal. Gap | ECE | Note |
-|--------|----------|----------|-----|------|
-| GSM8K | 96% | 0.04 | 0.000 | Well-calibrated — high confidence is warranted |
-| MedQA | 89% | 0.02 | 0.043 | Minor overconfidence, acceptable |
-| StrategyQA | 76% | 0.18 | 0.115 | Consistent overconfidence on reasoning tasks |
-| TruthfulQA | 73% | 0.21 | 0.124 | Absorbed misinformation expressed confidently |
-| MMLU | 60% | 0.39 | 0.000* | Largest calibration gap; ECE is an artifact |
+| Domain     | Accuracy | Cal. Gap | ECE     | Note                                           |
+| ---------- | -------- | -------- | ------- | ---------------------------------------------- |
+| GSM8K      | 96%      | 0.04     | 0.000   | Well-calibrated — high confidence is warranted |
+| MedQA      | 89%      | 0.02     | 0.043   | Minor overconfidence, acceptable               |
+| StrategyQA | 76%      | 0.18     | 0.115   | Consistent overconfidence on reasoning tasks   |
+| TruthfulQA | 73%      | 0.21     | 0.124   | Absorbed misinformation expressed confidently  |
+| MMLU       | 60%      | 0.39     | 0.000\* | Largest calibration gap; ECE is an artifact    |
 
-*MMLU ECE of 0.000 is a measurement artifact — all scores fall in one bin (100%), not evidence of good calibration.
+\*MMLU ECE of 0.000 is a measurement artifact — all scores fall in one bin (100%), not evidence of good calibration.
 
 **Headline finding:** 96–97% of all incorrect answers are assigned confidence scores ≥ 80%. The confidence distributions for correct and incorrect responses are nearly indistinguishable, meaning verbalized confidence carries minimal diagnostic signal.
 
