@@ -55,7 +55,7 @@ llm_calibration/
 ### 1. Clone or download the project
 
 ```bash
-git clone <your-repo-url>
+git clone "https://github.com/maitreyi03/LLMEval"
 cd llm_calibration
 ```
 
