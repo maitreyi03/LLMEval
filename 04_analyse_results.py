@@ -18,12 +18,10 @@ Usage:
 
 import warnings
 
-import matplotlib.gridspec as gridspec
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-from sklearn.calibration import calibration_curve
 
 from config import (
     SCORED_RESULTS_PATH,
@@ -178,6 +176,36 @@ def plot_overconfidence(df_known: pd.DataFrame, hcw: pd.DataFrame, save_path: st
     print(f"  Saved: {save_path}")
 
 
+# ── Pure-numpy calibration curve (no sklearn/scipy needed) ───────────────────
+
+def _calibration_curve(
+    y_true: np.ndarray,
+    y_prob: np.ndarray,
+    n_bins: int = 10,
+) -> tuple[np.ndarray, np.ndarray]:
+    """
+    Quantile-based reliability diagram data.
+    Splits y_prob into n_bins equal-count buckets, returns
+    (mean_accuracy_per_bin, mean_confidence_per_bin) for non-empty bins.
+    """
+    order      = np.argsort(y_prob)
+    y_true_s   = y_true[order]
+    y_prob_s   = y_prob[order]
+    bin_splits = np.array_split(np.arange(len(y_true_s)), n_bins)
+
+    prob_true, prob_pred = [], []
+    for idx in bin_splits:
+        if len(idx) == 0:
+            continue
+        prob_true.append(y_true_s[idx].mean())
+        prob_pred.append(y_prob_s[idx].mean())
+
+    if len(prob_true) < 2:
+        raise ValueError("Not enough data points to draw calibration curve.")
+
+    return np.array(prob_true), np.array(prob_pred)
+
+
 # ── Plot 3: Reliability diagrams ──────────────────────────────────────────────
 
 def plot_reliability_diagrams(df_known: pd.DataFrame, save_path: str):
@@ -196,9 +224,7 @@ def plot_reliability_diagrams(df_known: pd.DataFrame, save_path: str):
         n_bins = min(10, max(3, len(sub) // 10))
 
         try:
-            prob_true, prob_pred = calibration_curve(
-                y_true, y_prob, n_bins=n_bins, strategy="quantile"
-            )
+            prob_true, prob_pred = _calibration_curve(y_true, y_prob, n_bins=n_bins)
             ax.plot(prob_pred, prob_true, "o-", color="#3498db", lw=2, ms=5, label="Model")
         except Exception:
             ax.text(0.5, 0.5, "Insufficient data", ha="center", va="center",
