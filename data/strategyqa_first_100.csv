@@ -1,0 +1,101 @@
+id,question,answer_bool,answer_text,decomposition
+1,Are more people today related to Genghis Khan than Julius Caesar?,True,yes,How many kids did Julius Caesar have? | How many kids did Genghis Khan have? | Is #2 greater than #1?
+2,Could the members of The Police perform lawful arrests?,False,no,Who can perform lawful arrests? | Are members of The Police also #1?
+3,Would a Monoamine Oxidase candy bar cheer up a depressed friend?,False,no,"Depression is caused by low levels of what chemicals? | Monoamine Oxidase has an effect on what chemicals? | Of the chemicals listed in both #1 and #2, does Monoamine Oxidase raise their levels?"
+4,Would a dog respond to bell before Grey seal?,True,yes,How sensitive is a grey seal's hearing on land? | How sensitive is a dog's hearing on land? | Is #2 better than #1?
+5,Is a pound sterling valuable?,False,no,What is the value of the Pound Sterling based on? | Is #1 the material used in making it?
+6,Is shrimp scampi definitely free of plastic?,False,no,What protein is Shrimp scampi made out of? | What have #1 been found to contain? | Are #2 free from plastic?
+7,Do the anchors on Rede Globo speak Chinese?,False,no,What country broadcasts Rede Globo? | What is the official language of #1? | Is #2 Chinese?
+8,Will the Albany in Georgia reach a hundred thousand occupants before the one in New York?,False,no,"What is the population of Albany, Georgia? | What is the population of Albany, New York? | What is the difference between 100,000 and #1? | What is the difference between 100,000 and #2? | Is #3 smaller than #4?"
+9,Is a Boeing 737 cost covered by Wonder Woman (2017 film) box office receipts?,True,yes,How much does a Boeing 737 cost? | How much did the 2017 movie Wonder Woman gross? | Is #2 greater than #1?
+10,Is the language used in Saint Vincent and the Grenadines rooted in English?,True,yes,What language is used in Saint Vincent and the Grenadines? | Is #1 based in English?
+11,Can you buy Casio products at Petco?,False,no,What kind of products does Casio manufacture? | What kind of products does Petco sell? | Does #1 overlap with #2?
+12,Did the Space Race use relay batons?,False,no,What was the Space Race? | What are relay batons used for? | Is #1 the same as #2?
+13,Are Christmas trees dissimilar to deciduous trees?,True,yes,Which kind of trees are commonly used as Christmas trees? | Are #1 dissimilar to deciduous trees?
+14,Does Biochemistry study gluons?,False,no,What are gluons? | What things are studied in biochemistry? | Is #1 included in #2?
+15,Did land owners elect their rulers in the Kingdom of Hungary?,False,no,Which kind of government ruled over the Kingdom of Hungary? | Does #1 allow citizens to elect their own rulers?
+16,Would Nancy Pelosi publicly denounce abortion?,False,no,Which US political party does Nancy Pelosi identify with? | Do most people who identify with #1 oppose abortion?
+17,Does Dragon Ball shows and movies fall short of Friday 13th number of projects?,True,yes,"How many Dragon Ball series, TV specials and other features have been released? | How many Friday the 13th franchise films and television series have been released? | Is #2 greater than #1?"
+18,Would a student of the class of 2017 have amnesia about 9/11?,True,yes,"What year did 9/11 occur? | In what year would students graduating high-school in 2017 have been born in? | What age is childhood amnesia most common in? | If someone was born in #2, how old would they have been in #1? | Does #3 overlap with #4?"
+19,Is greed the most prevalent of the Seven Deadly Sins?,False,no,Is greed a  deadly sin? | Is gluttonly a deadly sin? | What percent of crimes involved greed? | What percent of people are overweight? | If #1 and #2 are both yes is #3 a higher percentager than #4?
+20,Would a psychic who admits to hot reading be trustworthy?,False,no,What do people pretend to be in order to successfully carry out hot reading? | Do the 'real' #1 consider hot reading to be genuine?
+21,Is average number of peas in a pod enough commas for a billion?,True,yes,How many peas are in the average pod? | How many commas are needed for a billion? | Is #1 at least equal to #2?
+22,Does actress Leila George lack the height to be a model?,False,no,How tall is Leila George? | How tall is Cindy Crawford?  | What is the height of model Sara Sampaio? | Is #1 shorter than both #2 and #3?
+23,Is Dustin Hoffman one of the B'nei Yisrael?,True,yes,What does B'nei Yisrael refer to? | What religion was Dustin Hoffman family as he was growing up? | Is #2 the same as #1?
+24,"If you were on a diet, would you have to skip lunch at McDonald's?",False,no,What is characteristic of food eaten by someone on a diet? | Are lunch options characterized by #1 unavailable at McDonald's?
+25,Could the Powerpuff Girls hypothetically attend the Camden Military Academy?,False,no,What gender are the Powerpuff Girls? | What gender is allowed to attend the Camden Military Academy? | Is #1 the same as #2?
+26,Would the top of Mount Fuji stick out of the Sea of Japan? ,True,yes,How tall is Mount Fuji? | What is the maximum depth of the Sea of Japan? | Is #1 greater than #2?
+27,Would an uninsured person be more likely than an insured person to decline a CT scan?,True,yes,"Typically how much does it cost to get a CT scan without insurance? | On average, how much does it cost to get a CT scan with insurance? | Is #2 less than #1?"
+28,Was the Donatello crucifix identified in 2020 life size?,False,no,"The crucifix sculpted by Donatello and identified in 2020 is a depiction of what? | What is the average height of #1? | What is the average height of a real, living, #1? | Is #2 equal to #3?"
+29,Is Disneyland Paris the largest Disney resort?,False,no,How big is Disneyland Paris in square miles? | How big is Walt Disney World in square miles? | Is #1 larger than #2?
+30,Could someone with fine motor control issues benefit from an altered keyboard layout?,True,yes,"What types of keyboard layouts exist? | Among #1, which keyboard layouts are optimized for disabilities? | Are any of #2 better for those with limited fine motor control?"
+31,Would Adam Sandler get a reference to Cole Spouse and a scuba man doll?,True,yes,What did Adam Sandler and Cole Sprouse star together in? | Was a scuba man doll used as a prop by Cole in #1?
+32,Is there a warthog on Broadway?,True,yes,"Which animals did Disney movie 'Lion King' feature? | Is a warthog included in #1? | Was Lion King adapted for a Broadway musical? | Considering #2 and #3, would the warthog appear on Broadway?"
+33,Does Disney have an ice princess?,True,yes,What are some popular Disney characters? | Is any of #1 an ice princess?
+34,Would a geographer use biochemistry in their work?,False,no,What is the area of study of a geographer? | What is the area of study of Biochemistry | Is any of #1 in #2?
+35,Could George Washington's own speeches have been recorded live to a compact disc?,False,no,When did George Washington die? | When were compact discs introduced? | Is #1 after #2?
+36,Was Lil Jon's top ranked Billboard song a collaboration with a member of The Lox?,False,no,What is Lil Jon's top ranked Billboard song? | What artists contributed to #1? | Who makes up the group The Lox? | Is any element of #3 also an element of #2?
+37,Would food made with black salt smell of sulfur?,True,yes,What does black salt smell like when cooked? | Does #1 smell similar to sulfur?
+38,Would a broadcast from Spirit make the news in 2020?,True,yes,When did the martian rover 'Spirit' send its last transmission? | Which rover sent another 'final message' in 2019? | Is #1 before 2020 and did #2 make the news?
+39,Is Miami a city on the American West Coast?,False,no,What state is Miami located in? | Which states are part of the American West Coast? | Is #1 included in #2?
+40,Could Robert Wadlow hypothetically see Frankenstein's monster's bald spot from above?,True,yes,How tall is Frankenstein? | How tall is Robert Wadlow? | Is #2 greater than #1?
+41,Is the tibia necessary to win the Stanley Cup?,True,yes,Which achievement leads to the award of the Stanley Cup? | Which sport does #1 involve? | Which body parts are actively involved in playing #2 | Which part of the body is the tibia found in? | Is #4 included in #3?
+42,Would an ethics professor teach a class on Cezanne?,False,no,What was Cezanne known for? | What branch of philosophy would deal with #1? | Is #2 the same as ethics? 
+43,If you add water to rice pudding is it horchata?,False,no,"What ingredients are in horchata? | What ingredients are in rice pudding? | If you add water to #2, is it the same as #1?"
+44,Can the Swiss Guard fill the Virginia General Assembly chairs?,False,no,What is the size of the Swiss Guard? | What is the seating capacity of the Virginia General Assembly? | Is #1 equal to or greater than #2?
+45,"If your skin was turning the color of a zombie, could it be because of nickel?",True,yes,What color skin are zombies typically depicted with? | Does Nickel turn a person's skin #1?
+46,Would a Dolce & Gabbana suit wearer be shunned by their Amish cousins?,True,yes,"What type of clothing do the Amish prefer? | What happens if an Amish person wears clothes going against #1? | What clothing pieces are Dolce & Gabbana known for? | If Amish cousins wore #3, would #2 happen to them?"
+47,Is the Illuminati card game still popular?,False,no,When was the last Illuminati card game published? | Was #1 with the last few years?
+48,Can a strawberry get worms similar to dogs?,True,yes,What types of worms can strawberries become infected with? | What types of worms can dogs become infected with? | Are any of #1 present in #2?
+49,Is Menthol associated with Thanksgiving?,False,no,What are some common dishes served during Thanksgiving? | Does any of #1 contain menthol?
+50,Would someone in Mumbai refer to Solanum melongena as an eggplant?,False,no,"In what country Mumbai located? | In what region is #1 located? | What is Solanum melongena referred to as in #2? | Is #3 the word ""eggplant""?"
+51,Is it okay to lie after taking an oath in a court of law?,False,no,"When you lie in court, what is that considered? | Is #1 legal?"
+52,Is art prioritized in the US education system?,False,no,"When funding is low in schools, what subjects are typically cut first? | What types of classes are #1 classified as? | Is art not classified as #2?"
+53,"While on a liquid diet, are there some types of soup you cannot eat?",True,yes,Are there any soups that contain substantially solid portions?
+54,Would it be impossible to use an Iwato scale for a twelve-tone technique composition?,True,yes,How many pitch cases are used for the Iwato scale? | Is #1 not equal to the number of pitch cases needed for the twelve-tone technique?
+55,Would the Titanic be well preserved at the bottom of the Gulf of Finland?,True,yes,"Are ships well-preserved in the Gulf of Finland? | Was the RMS Titanic a ship? | Is both #1 and #2 ""yes"""
+56,Could a dandelion suffer from hepatitis?,False,no,Hepatitis is the inflammation of what? | In which kingdom is #1 found? | In what kingdom are dandelions found? | Is #3 the same as #2?
+57,Did any country in Portuguese Colonial War share Switzerlands role in WWII?,True,yes,What was Switzerland's position in World War II? | Which countries were involved in the Portuguese Colonial War? | Did any of #2 maintain a #1 position through World War II?
+58,Would a week be enough time to watch every episode of Ugly Betty?,True,yes,How many hours are in a week? | How long is the entire Ugly Betty series? | Is #1 greater than or equal to #2?
+59,Would a Pict be confused by Old English?,True,yes,What language was spoken by the Picts? | In what language family is Old English? | Is #2 not closely related to #1?
+60,Was the Louisiana Purchase made with bitcoin?,False,no,When was Bitcoin launched? | When did the Louisiana Purchase take place? | Is #1 prior to #2?
+61,Did Japanese serfdom have higher status than English counterpart?,True,yes,How did English lords treat their serfs? | What did the Japanese recognize serfs as? | Is #2 higher in importance than #1?
+62,Is the best tasting part of the papaya in the center?,False,no,What is usually located in the center of papayas? | Is #1 usually consumed by people when eating papayas?
+63,Could Lil Wayne's children ride in a Chevrolet Corvette ZR1 together?,False,no,How many people can a Chevrolet Corvette ZR1 seat at a time? | How many children does Lil Wayne have? | Is #1 greater than or equal to #2?
+64,Is double duty an incorrect phrase for host of Dancing With The Stars?,False,no,Who is the host of TV series 'Dancing WIth The Stars'? | Who hosts America's Funniest Home Videos? | Do #1 and #2 being the same fail to meet the definition of double duty?
+65,Could Lil Wayne legally operate a vehicle on his own at the beginning of his career?,False,no,How old was Lil Wayne when he started his career in music? | What is the minimum age required to obtain a valid driver's license in the US? | Is #1 at least equal to #2?
+66,Could an ocelot subsist on a single bee hummingbird per day?,False,no,How much food does an ocelot need to live per day? | How much does a bee hummingbird weigh? | Is #2 greater than or equal to #1?
+67,Does Ukrainian Greek Catholic Church recognize Alexander Nevsky as a saint?,False,no,In which religion is Alexander Nevsky considered a saint? | What religion is the Ukrainian Greek Catholic Church a part of? | Is #1 and #2 the same?
+68,Was the original James Bond actor born near the Washington Monument?,False,no,"Who originally played James Bond? | Where was #1 born? | Where is the Washington Monument located? | What is the distance between #2 and #3? | Is #4 a short enough of a distance to be considered ""close""?"
+69,Did J. P. Morgan have healthy lungs?,False,no,What are the causes of unhealthy lungs? | Did J. P. Morgan engage in any part of #1?
+70,Would Firefighters be included in a September 11th memorial?,True,yes,Who gets remembered on September 11th? | Were firefighters among #1?
+71,Does Andrew Johnson's presidential number exceed Elagabalus's Emperor number?,False,no,What number president was Andrew Johnson? | What number emperor  was Elagabalus? | Is #1 greater than #2?
+72,Are any animals in Chinese calendar Chordata?,True,yes,What animals are on the Chinese calendar? | Which animals in #1 have a notochord and dorsal neural tube? | Which animals in #2 have pharyngeal slits and an endostyle at some stage of development? | Which animals in #3 have a post-anal tail? | Is there at least one animal listed in #4?
+73,Would a hypothetical Yeti be towered over by Andre the Giant?,True,yes,How tall was Andre the Giant? | How tall are Yeti thought to be? | Is #2 greater than #1?
+74,Are you likely to find a crucifix in Karachi?,False,no,"What religion does a crucifix symbolize? | What is the main religion observed in Karachi, Pakistan? | Is #1 the same as #2?"
+75,Was The Little Prince's titular character allergic to flowers?,False,no,Who is the titular character of The Little Prince? | Does #1 avoid interacting with flowers?
+76,Was a person sold a Creative Commons License for Boticelli's The Birth of Venus ripped off?,True,yes,"What is the purpose of a Creative Commons license? | Do works in the public domain need #1? | Works created before what year are presently in the public domain? | Was Boticelli's The Birth of Venus created before #3? | Considering #2 and #4, is #1 unnecessary for Boticelli's The Birth of Venus?"
+77,Did Millard Fillmore help to establish the University of Pittsburgh?,False,no,When was the University of Pittsburgh established? | When was Millard Fillmore born? | Is #2 before #1?
+78,Does Northern fur seal make good pet for six year old?,False,no,What environment do Northern fur seals thrive in? | Do six-years olds have safe access to #1?
+79,Would a pear sink in water?,False,no,What is the density of a pear? | What is the density of water? | Is #1 greater than #2?
+80,WIll Noah's Ark hypothetically sail through flooded Lincoln Tunnel?,False,no,What is the width of the Lincoln tunnel? | What is the width of the Noah's ark? | Is #1 greater than #2?
+81,Can you write a whole Haiku in a single tweet?,True,yes,How many characters can be expected to be in an average haiku? | What is the current character limit of a single tweet? | Is #1 reasonably less than #2?
+82,Would you take a photo of a Saltwater crocodile in Memphis?,False,no,Where can saltwater crocodiles be found? | Is Memphis located in any of #1?
+83,Could Scooby Doo fit in a kangaroo pouch?,False,no,What type of creature was Scooby-Doo? | How large are #1? | What resides in a kangaroo pouch? | How large are #3? | Is #2 approximately equal to #4?
+84,Do manta rays live in water above the safe temperature for cold food storage?,True,yes,What temperature should cold food be stored at? | What kind of water do manta rays live in? | What is the normal temperature of #2? | Is #3 higher than #1?
+85,Is the kayak a traditional boat in New Zealand?,False,no,What cultures invented the kayak? | What cultures are native to New Zealand? | Is there overlap between #1 and #2?
+86,Has the Subway restaurant franchise had any connections with child abusers?,True,yes,Was Jared Fogle a spokesman for Subway? | Is Jared Fogle a sexual abuser of children? | Are #1 and #2 the same?
+87,Would the high school class of 2010 have lived through the Presidency of Richard Nixon?,False,no,When was Richard Nixon president of the US until? | What year range would the high school class of 2010 be born in? | Is #1 in #2?
+88,Could ten gallons of seawater crush a six year old?,True,yes,What is the average weight of a six year old? | What is the weight of a gallon of seawater? | Is ten times #2 more than #1?
+89,Would a Deacon be likely to be a fan of the podcast 'God Awful Movies'?,False,no,What is the main topic of God Awful Movies? | What is God Awful Movies position on #1? | What are deacon's positions on #1? | Are #2 and #3 the same or similar?
+90,Could a giant squid fit aboard the deck of the titanic?,True,yes,What is the length of a giant squid? | What was the length of a deck on the Titanic? | Is #1 less than #2?
+91,Do more anchovy live in colder temperature waters than warmer?,False,no,Which oceans do Anchovy live in? | Which seas do Anchovy live in? | Are #1 and #2 cold waters?
+92,Is Antarctica a good location for Groundhog Day?,False,no,What does a groundhog have to see in order for a prediction to be made on Groundhog Day? | Which particular light source is responsible for casting #1? | How is the #2 pattern like on Antarctica? | Is #3 is irregular?
+93,Can the Powerpuff Girls form a complete tag team wrestling match?,False,no,What is the minimum number of people that can participate in a tag team match in professional wrestling? | The Powerpuff girls are how many in number? | Is #2 greater than or equal to #1?
+94,Will someone die without white blood cells?,True,yes,What function do white blood cells serve in the body? | Can a human live without #1?
+95,Does rock star Keith Richards play a captain of a boat in a movie?,True,yes,What role did Keith Richards play in the Pirates of the Caribbean movies? | Can #1 be considered a captain of a boat?
+96,Is 3D printing able to make adenovirus?,False,no,What is the size of a 3D printer's standard nozzle output? | What size range do adenoviruses fall in? | Is #2 greater than or equal to #1?
+97,Would an eleventh-grader be eligible for Medicare?,False,no,What ages are people in eleventh grade? | What ages are most medicare recipients? | Is there an overlap between #1 and #2?
+98,Is there a full Neptunian orbit between the first two burials of women in the Panthéon?,False,no,In what year was the first woman buried in the Panthéon? | In what year was the second woman buried in the Panthéon? | How many years are between #1 and #2? | How many years does it take for Neptune to orbit the Sun? | Is #4 less than or equal to #3?
+99,Will Oasis cruise boat traverse the Lincoln Tunnel?,False,no,What is the maximum height clearance of the Lincoln Tunnel? | How tall is the Oasis cruise ship? | Is #1 greater than or equal to #2?
+100,Could Oscar Wilde have operated a motor vehicle?,True,yes,When were cars first used? | When did Oscar Wilde pass away? | Did #2 happen after #1?
